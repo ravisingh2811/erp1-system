@@ -1,28 +1,32 @@
 import './App.css';
 
+import React from 'react';
+import {Route, Routes, BrowserRouter} from 'react-router-dom';
+import Sidebar from '../component/sidebar';
+import About from '../pages/About';
+import Home from '../pages/Home';
+import Contact from '../pages/Contact';
+import { Settings } from '@mui/icons-material';
+
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces by ravi singh <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+    <>
+    {/* <Sidebar/> */}
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' exact element = {<Home/>} ></Route>
+      <Route path='/about' exact element = {<About/>} ></Route>
+
+      <Route path='/contact' exact element = {<Contact/>} ></Route>
+
+      <Route path='/setting' exact element = {<Settings/>} ></Route>
+
+    </Routes>
+    </BrowserRouter>
+    </>
+      
+   
   );
 }
 
