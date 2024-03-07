@@ -17,6 +17,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
+import { Navigate } from 'react-router';
+import { Settings } from '@mui/icons-material';
 
 
 const drawerWidth = 240;
@@ -165,10 +167,10 @@ export default function Sidebar() {
                 >
                   {<InboxIcon />}
                 </ListItemIcon>
-                <ListItemText primary = "About" sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary = "About us" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding sx={{ display: 'block' }}  onClick={() => {navigate("/settings")}} >
+            <ListItem disablePadding sx={{ display: 'block' }}  onClick={Settings} >
               <ListItemButton
                 sx={{
                   minHeight: 48,
