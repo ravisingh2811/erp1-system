@@ -2,10 +2,12 @@ import React from 'react';
 import Sidebar from '../component/sidebar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Navbar from '../component/Navbar';
 
 function Contact(){
     return(
        <>
+       <Navbar/>
        <Box sx={{display : "flex"}}>
        <Sidebar/>
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
