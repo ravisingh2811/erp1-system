@@ -5,6 +5,7 @@ import Navbar from "../component/Navbar";
 import Sidebar from "../component/sidebar";
 import Box from "@mui/material/Box";
 import MUIDataTable from "mui-datatables";
+import "../style.css";
 
 const currentDate = new Date();
 const currentMonth = currentDate.getMonth();
@@ -160,7 +161,7 @@ const OrdersCalendarView = () => {
 
   return (
     <>
-      <div className="orders-calendar-view-container">
+      <div className="bgcolor">
         <Navbar />
         <Box height={70} />
         <Box sx={{ display: "flex" }}>

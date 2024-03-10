@@ -16,6 +16,7 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import { useNavigate } from "react-router-dom";
 import { useAppStore } from "../appStore";
 import HomeIcon from "@mui/icons-material/Home";
+import InfoIcon from '@mui/icons-material/Info';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import InventoryIcon from "@mui/icons-material/Inventory";
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
@@ -187,6 +188,7 @@ export default function Sidebar() {
               <ListItemText primary="Order Calendar" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
+          <Divider />
           <ListItem
             disablePadding
             sx={{ display: "block" }}
@@ -206,7 +208,7 @@ export default function Sidebar() {
                   justifyContent: "center",
                 }}
               >
-                {<InboxIcon />}
+                {<InfoIcon/>}
               </ListItemIcon>
               <ListItemText primary="About us" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
@@ -263,7 +265,7 @@ export default function Sidebar() {
             </ListItemButton>
           </ListItem>
         </List>
-        <Divider />
+       
       </Drawer>
     </Box>
   );
