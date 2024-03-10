@@ -1,0 +1,6 @@
+.bgcolor{
+    background: #eceff1;
+    background: linear-gradient(158deg, #e0e0e0, rrgb(233, 237, 254) 100%);
+    min-height: 100vh;
+   
+}

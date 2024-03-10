@@ -15,7 +15,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import { useNavigate } from "react-router-dom";
 import { useAppStore } from '../appStore';
-
+import HomeIcon from '@mui/icons-material/Home';
 
 const drawerWidth = 240;
 
@@ -101,7 +101,7 @@ export default function Sidebar() {
                     justifyContent: 'center',
                   }}
                 >
-                  {<InboxIcon />}
+                  {<HomeIcon />}
                 </ListItemIcon>
                 <ListItemText primary = "Home" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
