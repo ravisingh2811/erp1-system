@@ -7,6 +7,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Setting from './pages/Setting';
+import Product from './pages/Product';
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' exact element = {<Home/>} ></Route>
+      <Route path='/product' exact element = {<Product/>} ></Route>
       <Route path='/about' exact element = {<About/>} ></Route>
 
       <Route path='/contact' exact element = {<Contact/>} ></Route>
