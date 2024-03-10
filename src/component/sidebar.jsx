@@ -16,7 +16,9 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import { useNavigate } from "react-router-dom";
 import { useAppStore } from "../appStore";
 import HomeIcon from "@mui/icons-material/Home";
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import InventoryIcon from "@mui/icons-material/Inventory";
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -135,6 +137,54 @@ export default function Sidebar() {
                 {<InventoryIcon />}
               </ListItemIcon>
               <ListItemText primary="Products" sx={{ opacity: open ? 1 : 0 }} />
+            </ListItemButton>
+          </ListItem>
+          <ListItem
+            disablePadding
+            sx={{ display: "block" }}
+            onClick={() => navigate("/order")}
+          >
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              >
+                {<ShoppingCartCheckoutIcon />}
+              </ListItemIcon>
+              <ListItemText primary="Orders" sx={{ opacity: open ? 1 : 0 }} />
+            </ListItemButton>
+          </ListItem>
+          <ListItem
+            disablePadding
+            sx={{ display: "block" }}
+            onClick={() => navigate("/ordercal")}
+          >
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              >
+                {<DeliveryDiningIcon />}
+              </ListItemIcon>
+              <ListItemText primary="Order Calendar" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
           <ListItem
