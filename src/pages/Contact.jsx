@@ -1,49 +1,107 @@
-import React from 'react';
-import Sidebar from '../component/sidebar';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Navbar from '../component/Navbar';
+import React from "react";
+import Sidebar from "../component/sidebar";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Navbar from "../component/Navbar";
+import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
+import CardContent from "@mui/material/CardContent";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
-function Contact(){
-    return(
-       <>
-       <Navbar/>
-       <Box sx={{display : "flex"}}>
-       <Sidebar/>
+function Contact() {
+  return (
+    <>
+      <Navbar />
+      <Box sx={{ display: "flex" }}>
+        <Sidebar />
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <h1 style={{ marginTop: '50px'}} > Contact us</h1>
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
-          enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
-          imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
-          Convallis convallis tellus id interdum velit laoreet id donec ultrices.
-          Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
-          nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
-          leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
-          feugiat vivamus at augue. At augue eget arcu dictum varius duis at
-          consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
-          sapien faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
-          eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
-          neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra
-          tellus. Purus sit amet volutpat consequat mauris. Elementum eu facilisis
-          sed odio morbi. Euismod lacinia at quis risus sed vulputate odio. Morbi
-          tincidunt ornare massa eget egestas purus viverra accumsan in. In hendrerit
-          gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem
-          et tortor. Habitant morbi tristique senectus et. Adipiscing elit duis
-          tristique sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
-          eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
-          posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
-       </Box>
+          <Card sx={{ m: 8 }}>
+          
+            <CardHeader title={"Contact Us"} subheader={"We're here to help and answer any questions you might have."} sx={{ p: 5, bgcolor: "#f3f4f6" }}>
+            </CardHeader>
+            <CardContent sx={{ p: 5 }}>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  gap: "1rem",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.5rem",
+                  }}
+                >
+                  <label htmlFor="first-name">First name</label>
+                  <TextField
+                    id="first-name"
+                    placeholder="Enter your first name"
+                    variant="outlined"
+                  />
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.5rem",
+                  }}
+                >
+                  <label htmlFor="last-name">Last name</label>
+                  <TextField
+                    id="last-name"
+                    placeholder="Enter your last name"
+                    variant="outlined"
+                  />
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.5rem",
+                  marginTop: "1rem",
+                }}
+              >
+                <label htmlFor="email">Email</label>
+                <TextField
+                  id="email"
+                  placeholder="Enter your email"
+                  type="email"
+                  variant="outlined"
+                />
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.5rem",
+                  marginTop: "1rem",
+                }}
+              >
+                <label htmlFor="message">Message</label>
+                <TextField
+                  id="message"
+                  placeholder="Enter your message"
+                  multiline
+                  rows={4}
+                  variant="outlined"
+                />
+              </div>
+              <Button
+                variant="contained"
+                sx={{ mt: 2, bgcolor: "aliceblue", color: "black" }}
+              >
+                Submit
+              </Button>
+            </CardContent>
+          </Card>
+        </Box>
       </Box>
-     </> 
-       
-    )
+    </>
+  );
 }
 
 export default Contact;

@@ -17,6 +17,7 @@ import { useNavigate } from "react-router-dom";
 import { useAppStore } from "../appStore";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from '@mui/icons-material/Info';
+import ContactsIcon from '@mui/icons-material/Contacts';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import InventoryIcon from "@mui/icons-material/Inventory";
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
@@ -256,7 +257,7 @@ export default function Sidebar() {
                   justifyContent: "center",
                 }}
               >
-                {<InboxIcon />}
+                {<ContactsIcon />}
               </ListItemIcon>
               <ListItemText
                 primary="Contact Us"
