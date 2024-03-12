@@ -8,6 +8,7 @@ import Tab, { tabClasses } from "@mui/joy/Tab";
 import Box from "@mui/material/Box";
 import Navbar from "../component/Navbar";
 import Profile from "../tabs/Profile";
+import Experience from "../tabs/Experience";
 
 function About() {
   return (
@@ -41,12 +42,15 @@ function About() {
                 }}
               >
                 <Tab disableIndicator>About Me</Tab>
-                <Tab disableIndicator>Specifications</Tab>
+                <Tab disableIndicator>Experience</Tab>
                 <Tab disableIndicator>Review</Tab>
                 <Tab disableIndicator>Support</Tab>
               </TabList>
               <TabPanel value={0}>
                 <Profile/>
+              </TabPanel>
+              <TabPanel value={1}>
+                <Experience/>
               </TabPanel>
             </Tabs>
           </Box>
