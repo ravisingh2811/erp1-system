@@ -88,8 +88,8 @@ function Experience() {
               sx={{ flex: 1, minWidth: 100, borderRadius: "20%" }}
             >
               <img
-                src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
-                srcSet="https://media.geeksforgeeks.org/gfg-gg-logo.svg 5x"
+                src="https://thinkrealty.com/wp-content/uploads/2023/01/TR_v2_4color.png"
+                srcSet="https://thinkrealty.com/wp-content/uploads/2023/01/TR_v2_4color.png 5x"
                 loading="lazy"
                 alt=""
               />

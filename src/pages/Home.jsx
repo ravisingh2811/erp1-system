@@ -31,7 +31,7 @@ function Home() {
                       p: 1.5,
                       minWidth: 49 + "%",
                       height: 194,
-                      backgroundColor: "#adfaed75",
+                      backgroundColor: "#a8a8ff8a",
                     }}
                   >
                     <CardContent>
@@ -60,7 +60,7 @@ function Home() {
                       p: 1.5,
                       minWidth: 49 + "%",
                       height: 194,
-                      backgroundColor: "#0000ff2b",
+                      backgroundColor: "#a8a8ff8a",
                     }}
                   >
                     <CardContent>
@@ -109,7 +109,7 @@ function Home() {
                       <span>Total Income</span>
                     </CardContent>
                   </Card>
-                  <Card sx={{ p: 0.3, backgroundColor: "aliceblue" }}>
+                  <Card sx={{ p: 0.3, backgroundColor: "#5ee1ff7a" }}>
                     <CardContent>
                       <span>
                         ${" "}

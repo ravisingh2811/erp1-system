@@ -3,7 +3,7 @@ import Sidebar from "../component/sidebar";
 import Tabs from "@mui/joy/Tabs";
 import TabList from "@mui/joy/TabList";
 import TabPanel from "@mui/joy/TabPanel";
-import Typography from "@mui/joy/Typography";
+import Typogaphy from "@mui/joy/Typography";
 import Tab, { tabClasses } from "@mui/joy/Tab";
 import Box from "@mui/material/Box";
 import Navbar from "../component/Navbar";

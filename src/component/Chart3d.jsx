@@ -12,7 +12,7 @@ export const data = [
 
 export const options = {
   is3D: true,
-  
+  colors:["#a8a8ff" , "#5ee1ff" , "#66a2de"],
 };
 
 export default function Chart3d() {
