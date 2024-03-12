@@ -13,7 +13,7 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", bgcolor:"#eceff1" }}>
         <Sidebar />
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <Card sx={{ m: 8 }}>
