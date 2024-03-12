@@ -30,14 +30,14 @@ function About() {
                   p: 0.5,
                   gap: 1,
                   borderRadius: "xl",
-                  backgroundColor:"#ede7e700",
+                  backgroundColor:"#ffffff",
                   padding:1,
                   boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)",
                  // bgcolor: "background.level1",
                   [`& .${tabClasses.root}[aria-selected="true"]`]: {
                     boxShadow: "sm",
                     borderRadius:"xl",
-                    bgcolor: "background.surface",
+                    bgcolor: "#eceff1",
                   },
                 }}
               >
