@@ -36,7 +36,7 @@ export default function SocialFlow() {
           className="facebook social"
           style={{color: "blue", margin: 10 + "px" }}
         >
-          <FontAwesomeIcon icon={faCodiepie} size="2x" />
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
         <a
         target="_blank"
