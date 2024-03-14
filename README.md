@@ -2,7 +2,10 @@
 
 ## 1. Introduction
 
-The documentation provides a guide for setting up and using the front-end application for a simplified ERP system built using React. The project aims to create a user-friendly interface for managing key aspects of a business, including products and orders management.
+The documentation provides a guide for setting up and using the front-end application for a simplified ERP system built using React. The project aims to create a user-friendly interface for managing key aspects of a business, including products and order management.
+
+you can also watch this video 
+https://drive.google.com/file/d/1HlMN2q_PI87hzCskl-dj1uQ8YNFEv8J7/view?usp=sharing
 
 ## 2. Prerequisites
 
