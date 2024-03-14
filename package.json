@@ -38,7 +38,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --dest erp1-system"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
