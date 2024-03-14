@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ravisingh2811.github.io/erp1-system/",
+  "homepage": "https://ravisingh2811.github.io/erp1-system",
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,
@@ -38,7 +38,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist --dest erp1-system"
   },
   "eslintConfig": {
     "extends": [
