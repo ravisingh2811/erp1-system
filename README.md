@@ -37,34 +37,74 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Learn More
+ ERP(Enterprise Resource Planning) System with React
 
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
+## 1. Introduction
 
-To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](https://vitest.dev/guide/)
+The documentation provides a guide for setting up and using the front-end application for a simplified ERP system built using React. The project aims to create a user-friendly interface for managing key aspects of a business, including products and orders management.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 2. Prerequisites
 
-### Code Splitting
+- Ensure you have Node.js installed on your machine.
 
-This section has moved here: [https://sambitsahoo.com/blog/vite-code-splitting-that-works.html](https://sambitsahoo.com/blog/vite-code-splitting-that-works.html)
+- You should have a basic understanding of React and React Router.
 
-### Analyzing the Bundle Size
+## 3. Installation
 
-This section has moved here: [https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer)
+Clone the repository to your local machine using the following command: *git clone <repository_url>*
 
-### Making a Progressive Web App
+Navigate to the project directory: *cd erp-system-react*
 
-This section has moved here: [https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf](https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf)
+Install dependencies using npm or yarn: *npm install* or *yarn install*
 
-### Advanced Configuration
+## 4. Running the Application
 
-This section has moved here: [https://vitejs.dev/guide/build.html#advanced-base-options](https://vitejs.dev/guide/build.html#advanced-base-options)
+Start the development server by running the following command: 
 
-### Deployment
+*npm run start or yarn start*
 
-This section has moved here: [https://vitejs.dev/guide/build.html](https://vitejs.dev/guide/build.html)
+The application will open in your default web browser. If not, navigate to http://localhost:3000 in your browser.
 
-### Troubleshooting
 
-This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+
+## Features
+
+### Dashboard Page
+
+- Upon opening the application, you will be directed to the Dashboard page.
+- The Dashboard displays key metrics or features, such as total number of products and orders.
+- Links or buttons are provided for quick navigation to the Products and Orders management pages.
+  
+![App Screenshot](https://github.com/PratyayRaj/Pratyay_ERP/blob/main/Screenshots/Screenshot%202024-03-13%20014914.png)
+
+### Products Management Page
+
+- Click on the "Products" link/button in the Dashboard to navigate to the Products Management page.
+  
+![App Screenshot](https://github.com/PratyayRaj/Pratyay_ERP/blob/main/Screenshots/Screenshot%202024-03-13%20020930.png)
+
+- The Products Management page presents a list of products with details including name, category, price, and stock quantity.
+- You can add, edit, and delete products using the functionalities provided.
+  
+![App Screenshot](https://github.com/PratyayRaj/Pratyay_ERP/blob/main/Screenshots/Screenshot%202024-03-13%20021006.png)
+
+### Orders Management Page
+
+- Navigate to the Orders Management page by clicking on the "Orders" link/button in the Dashboard.
+- The Orders Management page displays a list of orders with details such as order ID, customer name, order date, and status.
+  
+![App Screenshot](https://github.com/PratyayRaj/Pratyay_ERP/blob/main/Screenshots/Screenshot%202024-03-14%20144333.png)
+
+- View order details, update order status, and delete orders as required.
+  
+![App Screenshot](https://github.com/PratyayRaj/Pratyay_ERP/blob/main/Screenshots/Screenshot%202024-03-14%20144506.png)
+
+### Orders Calendar View
+
+- If implemented, the Orders Calendar View provides a calendar interface displaying orders based on their expected delivery dates.
+  
+![App Screenshot](https://github.com/PratyayRaj/Pratyay_ERP/blob/main/Screenshots/Screenshot%202024-03-14%20144633.png)
+
+- Click on a date to view all orders due for delivery on that day.
+  
+![App Screenshot](https://github.com/PratyayRaj/Pratyay_ERP/blob/main/Screenshots/Screenshot%202024-03-14%20144646.png)
