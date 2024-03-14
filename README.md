@@ -19,8 +19,7 @@ Before getting started, ensure the following prerequisites are met:
 
 1. Navigate to your repository on GitHub.
 2. Click on the "Code" dropdown button and select "Open with Codespaces". This will create a new Codespace for your repository.
-
-![Open with Codespaces](https://github.com/ravisingh2811/erp1-system/assets/77446236/a3f51aa7-2df3-454f-b8cc-b56b13416c2d)
+<img width="469" alt="Screenshot 2024-03-15 at 1 20 12 AM" src="https://github.com/ravisingh2811/erp1-system/assets/77446236/3129738d-089a-4821-a0a6-5b5acae3f8ef">
 
 ## 4. Running the Application
 
