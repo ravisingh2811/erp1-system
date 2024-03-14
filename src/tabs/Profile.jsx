@@ -2,23 +2,22 @@ import React from "react";
 import Sidebar from "../component/sidebar";
 import Navbar from "../component/Navbar";
 import Box from "@mui/material/Box";
-import AspectRatio from '@mui/joy/AspectRatio';
-import Button from '@mui/joy/Button';
-import Divider from '@mui/joy/Divider';
-import FormControl from '@mui/joy/FormControl';
-import FormLabel from '@mui/joy/FormLabel';
+import AspectRatio from "@mui/joy/AspectRatio";
+import Button from "@mui/joy/Button";
+import Divider from "@mui/joy/Divider";
+import FormControl from "@mui/joy/FormControl";
+import FormLabel from "@mui/joy/FormLabel";
 
-import Input from '@mui/joy/Input';
-import IconButton from '@mui/joy/IconButton';
-import Stack from '@mui/joy/Stack';
+import Input from "@mui/joy/Input";
+import IconButton from "@mui/joy/IconButton";
+import Stack from "@mui/joy/Stack";
 
-import Typography from '@mui/joy/Typography';
-import Card from '@mui/joy/Card';
+import Typography from "@mui/joy/Typography";
+import Card from "@mui/joy/Card";
 
-
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
-import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRounded';
-import EditRoundedIcon from '@mui/icons-material/EditRounded';
+import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import AccessTimeFilledRoundedIcon from "@mui/icons-material/AccessTimeFilledRounded";
+import EditRoundedIcon from "@mui/icons-material/EditRounded";
 import SocialFlow from "./Socialicon";
 
 function Profile() {
@@ -26,8 +25,8 @@ function Profile() {
     <>
       <div className="bgcolor">
         <Navbar />
-          <Sidebar />
-          <Card style={{ width:100+"vh", minHeight:40+"vh"  }}>
+        <Sidebar />
+        <Card style={{ width: 100 + "vh", minHeight: 40 + "vh" }}>
           <Box sx={{ mb: 1 }}>
             <Typography level="title-md">Personal info</Typography>
             <Typography level="body-sm">
@@ -38,13 +37,13 @@ function Profile() {
           <Stack
             direction="row"
             spacing={3}
-            sx={{ display: { xs: 'none', md: 'flex' }, my: 1 }}
+            sx={{ display: { xs: "none", md: "flex" }, my: 1 }}
           >
             <Stack direction="column" spacing={1}>
               <AspectRatio
                 ratio="1"
                 maxHeight={300}
-                sx={{ flex: 1, minWidth: 120, borderRadius: '100%' }}
+                sx={{ flex: 1, minWidth: 120, borderRadius: "100%" }}
               >
                 <img
                   src="../public/usermy.jpg"
@@ -59,13 +58,13 @@ function Profile() {
                 variant="outlined"
                 color="neutral"
                 sx={{
-                  bgcolor: 'background.body',
-                  position: 'absolute',
+                  bgcolor: "background.body",
+                  position: "absolute",
                   zIndex: 2,
-                  borderRadius: '50%',
+                  borderRadius: "50%",
                   left: 100,
                   top: 170,
-                  boxShadow: 'sm',
+                  boxShadow: "sm",
                 }}
               >
                 <EditRoundedIcon />
@@ -75,16 +74,30 @@ function Profile() {
               <Stack spacing={1}>
                 <FormLabel>Name</FormLabel>
                 <FormControl
-                  sx={{ display: { sm: 'flex-column', md: 'flex-row' }, gap: 2 }}
+                  sx={{
+                    display: { sm: "flex-column", md: "flex-row" },
+                    gap: 2,
+                  }}
                 >
-                  <Input size="sm" placeholder="First name" defaultValue={"Ravi"} />
-                  <Input size="sm" placeholder="Last name" defaultValue={"Singh"} sx={{ flexGrow: 1 }} />
+                  <Input
+                    size="sm"
+                    placeholder="First name"
+                    defaultValue={"Ravi"}
+                    readOnly
+                  />
+                  <Input
+                    size="sm"
+                    placeholder="Last name"
+                    defaultValue={"Singh"}
+                    sx={{ flexGrow: 1 }}
+                    readOnly
+                  />
                 </FormControl>
               </Stack>
               <Stack direction="row" spacing={2}>
                 <FormControl>
                   <FormLabel>Role</FormLabel>
-                  <Input size="sm" defaultValue="Software Developer" />
+                  <Input readOnly size="sm" defaultValue="Software Developer" />
                 </FormControl>
                 <FormControl sx={{ flexGrow: 1 }}>
                   <FormLabel>Email</FormLabel>
@@ -95,18 +108,17 @@ function Profile() {
                     placeholder="email"
                     defaultValue="itsravisingh2811@gmail.com"
                     sx={{ flexGrow: 1 }}
+                    readOnly
                   />
                 </FormControl>
               </Stack>
               <div>
-              <Typography level="title-md">Social Info</Typography>
-               <SocialFlow/>
+                <Typography level="title-md">Social Info</Typography>
+                <SocialFlow />
               </div>
             </Stack>
           </Stack>
-          
         </Card>
-       
       </div>
     </>
   );

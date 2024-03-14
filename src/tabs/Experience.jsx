@@ -66,7 +66,9 @@ function Experience() {
           </Box>
         </Card>
         {/* Expercince no 2 */}
-        <Card style={{ width: 100 + "vh", minHeight: 35 + "vh", marginTop: 15 }}>
+        <Card
+          style={{ width: 100 + "vh", minHeight: 35 + "vh", marginTop: 15 }}
+        >
           <Box sx={{ mb: 1 }}>
             <Stack
               direction="row"
@@ -119,7 +121,9 @@ function Experience() {
           </Box>
         </Card>
         {/* Expercince no 3 */}
-        <Card style={{ width: 100 + "vh", minHeight:35 + "vh", marginTop: 15 }}>
+        <Card
+          style={{ width: 100 + "vh", minHeight: 35 + "vh", marginTop: 15 }}
+        >
           <Box sx={{ mb: 1 }}>
             <Stack
               direction="row"
@@ -150,18 +154,16 @@ function Experience() {
               <ul>
                 <li>
                   Managed and Developed 15+ websites ensuring adherence to
-                  client specifications. 
+                  client specifications.
                 </li>
                 <li>
-                Specialized in WordPress
-                  customization and SEO optimization to enhance visibility and
-                  search rankings.
+                  Specialized in WordPress customization and SEO optimization to
+                  enhance visibility and search rankings.
                 </li>
                 <li>
-                Crafted responsive, feature-rich websites
-                  using PHP, MySQL, HTML, CSS, and JavaScript.
+                  Crafted responsive, feature-rich websites using PHP, MySQL,
+                  HTML, CSS, and JavaScript.
                 </li>
-                
               </ul>
             </Typography>
           </Box>

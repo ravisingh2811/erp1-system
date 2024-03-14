@@ -185,7 +185,7 @@ function Navbar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+           Simplified ERP System
           </Typography>
           <Search>
             <SearchIconWrapper>

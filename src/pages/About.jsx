@@ -9,6 +9,7 @@ import Box from "@mui/material/Box";
 import Navbar from "../component/Navbar";
 import Profile from "../tabs/Profile";
 import Experience from "../tabs/Experience";
+import Skill from "../tabs/Skill";
 
 function About() {
   return (
@@ -30,27 +31,30 @@ function About() {
                   p: 0.5,
                   gap: 1,
                   borderRadius: "xl",
-                  backgroundColor:"#ffffff",
-                  padding:1,
-                  boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)",
-                 // bgcolor: "background.level1",
+                  backgroundColor: "#ffffff",
+                  padding: 1,
+                  boxShadow:
+                    "0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)",
+                  // bgcolor: "background.level1",
                   [`& .${tabClasses.root}[aria-selected="true"]`]: {
                     boxShadow: "sm",
-                    borderRadius:"xl",
+                    borderRadius: "xl",
                     bgcolor: "#eceff1",
                   },
                 }}
               >
                 <Tab disableIndicator>About Me</Tab>
                 <Tab disableIndicator>Experience</Tab>
-                <Tab disableIndicator>Review</Tab>
-                <Tab disableIndicator>Support</Tab>
+                <Tab disableIndicator>Technical Skills</Tab>
               </TabList>
               <TabPanel value={0}>
-                <Profile/>
+                <Profile />
               </TabPanel>
               <TabPanel value={1}>
-                <Experience/>
+                <Experience />
+              </TabPanel>
+              <TabPanel value={2}>
+                <Skill />
               </TabPanel>
             </Tabs>
           </Box>
